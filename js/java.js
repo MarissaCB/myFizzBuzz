@@ -1,5 +1,12 @@
 
-for (var counter = 1; counter <= 100; counter++) {
+
+//prompt("Please enter a number ");
+
+$( document ).ready(function() {
+	$("button").on("click", function(){
+	var userValue = $(".userValue").val();	
+
+for (var counter = userValue; counter <= 100; counter++) {
 
 
 if (counter % 5 == 0 && counter % 3 == 0)  {
@@ -22,3 +29,5 @@ else {
 }
 
 }
+});
+});
